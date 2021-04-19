@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: montserrat;
+    color: white;
+    overflow-x: hidden;
+}
+/* Icons */
+.Introduction{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 2rem;
+    height: 100vh;
+    display: flex;
+    font-size: 1.5rem;
+    padding-top: 30px;
+}
+.Intro-home a{
+    color: white;
+}
+.fa{
+    margin: 0.9rem auto;
+    padding-left: 5px;
+}
+/* Intro */
+.Article{
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    height: 100vh;
+    width: 100vw;
+    font-size: 1rem;
+}
+.Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.wave{
+    width: 3rem;
+}
+.division{
+    margin-top: 7rem;
+    font-size: 1rem;
+}
+.image{
+    margin-top: 3rem;
+}
+.CEO{
+    border-radius: 15rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+/* About Section */
+#About{
+    background-color: black;
+    height: 150vh;
+    width: 100vw;
+    margin: auto;
+}
+.Write-ups{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 70vw;
+    text-align: left;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 70vw;
+}
+.all-logo{
+    width: 15rem;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+.logo-1{
+    width: 5rem;
+}
+.logo-2{
+    width: 5rem;
+}
+.logo-3{
+    width: 5rem;
+}
+
+/* projects */
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-size: 10px;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.first, .second, .third, .fourth{
+    padding: 20px 20px;
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 50px;
+    padding-top: 20px;
+    width: 50em;
+    height: 300px;
+}
+.first, .third{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 300px;
+    width: 70vw;
+    -webkit-box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.33);
+}
+.second, .fourth{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    height: 300px;
+    width: 70vw;
+    -webkit-box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.33);
+}
+.first a, .second a, .third a, .fourth a{
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 13rem;
+    color: black;
+    font-weight: 800;
+}
+.first a{
+    color: white;
+}
+.third a{
+    color: black;
+}
+.fourth a{
+    color: white;
+}
+
+/* footer */
+footer{
+    padding: 1rem;
+    padding-left: 3rem;
+    text-align: center;
+    color: black;
+    font-size: 13px;
+}
+
+/* media-query */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* Icons */
+    .Introduction{
+        width: 3rem;
+        height: 100vh;
+        font-size: 2rem;
+    }
+    .fa{
+        padding-left: 7px;
+    }
+
+    /* Intro */
+    .Home{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .division{
+        margin-top: 10rem;
+        font-size: 1.5rem;
+    }
+    .image{
+        margin-top: 12rem;
+    }
+    .CEO{
+        border-radius: 15rem;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    /* About Section */
+    #About{
+        height: 100vh;
+        margin: auto;
+    }
+    .Write-ups{
+        width: 80vw;
+        text-align: justify;
+    }
+    .skills{
+        margin-top: 50px;
+        width: 100vw;
+    }
+    .all-logo{
+        margin-top: 30px;
+        padding: 10px;
+        width: 40rem;
+        background-color: white;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .logo-1{
+        width: 5rem;
+    }
+    .logo-2{
+        width: 5rem;
+    }
+    .logo-3{
+        width: 5rem;
+    }
+
+    /* projects */
+    .project{
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+        margin-top: 50px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-left: 4rem;
+    }
+    .first, .second, .third, .fourth{
+        padding: 20px 20px;
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 100px;
+        margin: 15px;
+        padding-top: 20px;
+        width: 100vw;
+        transition: all .2s ease-in-out;
+        height: 300px;
+    }
+    .first:hover, .second:hover, .third:hover, .fourth:hover{
+        transform: scale(1.1); 
+    }
+    .first, .fourth{
+        background-color: black;
+        color: white;
+        height: 300px;
+        width: 40vw;
+        -webkit-box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.33);
+        -moz-box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.33);
+        box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.33);
+    }
+    .second, .third{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        background-color: white;
+        height: 300px;
+        width: 40vw;
+    }
+
+    /* footer */
+    footer{
+        padding: 1rem;
+        padding-left: 3rem;
+        text-align: center;
+        color: black;
+        font-size: 13px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
